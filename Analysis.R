@@ -1,6 +1,8 @@
 ## attach the dataset
 attach(infert)
 
+## view the dataset
+View(infert)
 
 
 ## Normality testing
