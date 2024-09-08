@@ -5,10 +5,10 @@ attach(infert)
 View(infert)
 
 
-## Normality testing
-#install.packages("nortest")
+#Normality testing
+install.packages("nortest")
 ## call the library
-#library("nortest")
+library("nortest")
 
 ## anderson darling testing for Education
 #d.test(case)
