@@ -8,3 +8,4 @@ library(neuralnet)
 ? infert
 ## check the observation
 dim(infert)
+
