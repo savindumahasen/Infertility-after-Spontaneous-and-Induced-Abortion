@@ -69,3 +69,4 @@ nn= neuralnet(case~age+parity+induced+spontaneous+stratum+pooled.stratum, data=i
 nn
 plot(nn)
 nn$weights
+nn$result.matrix
