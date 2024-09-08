@@ -51,7 +51,7 @@ lillie.test(pooled.stratum)
 shapiro.test(pooled.stratum)
 
 ## install the package neuralnet
-#install.packages("neuralnet")
+install.packages("neuralnet")
 
 ## call the library
 library(neuralnet)
@@ -63,5 +63,5 @@ dim(infert)
 ?neuralnet
 
 
-#nn= neuralnet(case~age+parity+induced+spontaneous, data=infert, hidden=2,
- #             err.fct = "ce",linear.output=FALSE)
+nn= neuralnet(case~age+parity+induced+spontaneous, data=infert, hidden=2,
+              err.fct = "ce",linear.output=FALSE)
