@@ -74,3 +74,8 @@ nn$covariate
 nn$net.result[[1]]
 nn1 = ifelse(nn$net.result[[1]]>0.5,1,0)
 nn1
+missClassificationError = mean(case != nn1)
+missClassificationError
+
+outPutVsActual = cbind(case, nn1)
+outPutVsActual
