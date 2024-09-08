@@ -63,5 +63,9 @@ dim(infert)
 ?neuralnet
 
 
-nn= neuralnet(case~age+parity+induced+spontaneous, data=infert, hidden=2,
+nn= neuralnet(case~age+parity+induced+spontaneous+stratum+pooled.stratum, data=infert, hidden=2,
               err.fct = "ce",linear.output=FALSE)
+
+nn
+plot(nn)
+nn$weights
