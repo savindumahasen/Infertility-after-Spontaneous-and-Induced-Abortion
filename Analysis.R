@@ -70,3 +70,4 @@ nn
 plot(nn)
 nn$weights
 nn$result.matrix
+nn$covariate
