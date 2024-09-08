@@ -71,3 +71,6 @@ plot(nn)
 nn$weights
 nn$result.matrix
 nn$covariate
+nn$net.result[[1]]
+nn1 = ifelse(nn$net.result[[1]]>0.5,1,0)
+nn1
