@@ -50,6 +50,13 @@ ad.test(pooled.stratum)
 lillie.test(pooled.stratum)
 shapiro.test(pooled.stratum)
 
+## correlational analysis
+cor.test(case, age, method="spearman")
+cor.test(case,parity, method = "spearman")
+cor.test(case,induced, method="spearman")
+cor.test(case,spontaneous, method="spearman")
+cor.test(case, stratum, method="spearman")
+cor.test(case, pooled.stratum, method="spearman")
 ## install the package neuralnet
 install.packages("neuralnet")
 
