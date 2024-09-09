@@ -93,7 +93,11 @@ nn
 
 ## when we comparing the nn and nn.bp nn is used for making the prediction 
 # Assuming the model expects these column names: "age", "gender", "income", "education"
-covariates <- matrix(c(26,6, 1, 1,1,1), byrow=TRUE, ncol=6)
+covariates <- matrix(c(26,6, 1, 1,1,1,
+                       26,6,1,0,0,0,
+                       26,6,0,1,1,1,
+                       26,6,1,0,0,1,
+                       26,6,0,0,0,1), byrow=TRUE, ncol=6)
 
 # Assign appropriate column names
 colnames(covariates) <- c("age", "parity", "induced", "spaontaneous","stratum", "pooled.stratum")
@@ -102,3 +106,5 @@ colnames(covariates) <- c("age", "parity", "induced", "spaontaneous","stratum", 
 new.output <- compute(nn, covariate=covariates)
 new.output$net.result
 new.output
+
+
