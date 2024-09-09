@@ -114,7 +114,8 @@ new.output <- compute(nn, covariate=covariates)
 new.output$net.result
 new.output
 
-## Install the plumber package for connecting with API
 install.packages("plumber")
-## call the library
-library(plumber)
+library("plumber")
+
+r <- plumb("API.R")
+r$run(port = 8000)
