@@ -114,8 +114,3 @@ new.output <- compute(nn, covariate=covariates)
 new.output$net.result
 new.output
 
-install.packages("plumber")
-library("plumber")
-
-r <- plumb("API.R")
-r$run(port = 8000)
