@@ -79,3 +79,16 @@ missClassificationError
 
 outPutVsActual = cbind(case, nn1)
 outPutVsActual
+
+
+## Playing the the backpropergation algorithm
+nn.bp =neuralnet(
+  formula = case~age+parity+induced+spontaneous+stratum+pooled.stratum,
+  data=infert, hidden=2, learningrate =0.01, algorithm = "backprop",
+  err.fct = "ce",linear.output=FALSE
+)
+nn.bp
+plot(nn.bp)
+nn
+
+## when we comparing the nn and nn.bp nn is used for making the prediction 
